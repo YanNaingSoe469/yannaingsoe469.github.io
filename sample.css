@@ -1,0 +1,102 @@
+@media (max-width: 1080px){
+    .home-text{
+        padding:0 100px;
+    }
+}
+
+@media (max-width: 991px){
+    .home-text h1{
+        font-size: 3rem;
+    }
+
+    .home-text{
+        padding: 0 4%;
+    }
+
+    section{
+        padding: 20px 0;
+    }
+
+    .footer{
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 900px){
+    .navbar{
+        display: none;
+    }
+
+    header{
+        padding: 6px 4%;
+    }
+
+    .home-text h1{
+        font-size: 2rem;
+    }
+
+    .btn{
+        padding: .6rem 1.2rem;
+    }
+}
+
+@media (max-width: 470px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .contact form .email{
+        margin: 0px 20px;
+    }
+
+    .copyright{
+        width: 100%;
+    }
+
+    .codelab{
+        padding: 0px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 370px){
+    header{
+        padding: 6px 4%;
+    }
+
+    header .logo{
+        font-size: 12px;
+    }
+
+    header .btn{
+        padding: .4rem .7rem;
+    }
+
+    .home-text h1{
+        font-size: 1.7rem;
+    }
+
+    .contact form .email{
+        margin: 0px 20px;
+    }
+
+    .home-text .play{
+        bottom: 8%;
+        right: 1rem;
+    }
+
+    .home-text .play .bx{
+        padding: 7px;
+    }
+
+    .movie-container {
+        grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    }
+
+    .box .box-img{
+        height: 240px;
+    }
+
+}

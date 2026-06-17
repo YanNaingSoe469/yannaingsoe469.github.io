@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Portfolio</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+    <!-- bootstrap css  -->
+
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="">
+    <!-- nav bar begin  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm text-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-primary" href="./index.html#home">Yan Naing Soe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="./books.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="./courses.html">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="./initiatives.html">Initiatives</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar end  -->
+
+
+    <div class="container">
+        <h1 class="my-3 text-center">Projects Created</h1>
+
+        <div class="card-pane gap-3 flex-wrap">
+
+            <!-- Button trigger modal -->
+            <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
+                data-bs-toggle="modal" data-tags="python django web" data-bs-target="#mih">
+                <div class=" d-flex flex-column justify-content-around align-items-center">
+                    <img class=" img-thumbnail shadow-sm" src="./images/projects/MiH_Project.png" alt="">
+                    <p class="mt-2">Myanmar InnoHub using Django
+                    </p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="mih" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Myanmar InnoHub using Django</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/projects/MiH_Project.png" class="w-100" alt="">
+                            <div class="my-2">
+                                Myanmar InnoHub is developed to be a central portal for all type of technogolical
+                                innovations. Aimed to allow users to post, share and display their own projects on thier
+                                profile. Also contains project browsing, filter/search, and feedback features.
+                            </div>
+
+                            <div class="my-1">
+                                <button class="btn btn-sm btn-outline-primary">#Python</button>
+                                <button class="btn btn-sm btn-outline-primary">#Django</button>
+                                <button class="btn btn-sm btn-outline-primary">#Web</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="https://github.com/YanNaingSoe469/mih-git"><button type="button"
+                                    class="btn btn-primary">See Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
+                data-bs-toggle="modal" data-tags="web php laravel" data-bs-target="#thoss">
+                <div class=" d-flex flex-column justify-content-around align-items-center">
+                    <img class=" img-thumbnail shadow-sm" src="./images/projects/pos.png" alt="">
+                    <p class="mt-2">POS System using Laravel
+                    </p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="thoss" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">POS System using
+                                Laravel</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/projects/pos.png" class="w-100" alt="">
+                            <div class="my-2">
+                                Being my first Laravel project built from scratch, this project explores
+                                most commonly used features of the Laravel architecutre. This includes
+                                routing, middleware, authentication control, ORM, and API.
+                            </div>
+
+                            <div class="my-1">
+                                <button class="btn btn-sm btn-outline-primary">#Web</button>
+                                <button class="btn btn-sm btn-outline-primary">#PHP</button>
+                                <button class="btn btn-sm btn-outline-primary">#Laravel</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="https://github.com/YanNaingSoe469/point_of_sale_project"><button type="button"
+                                    class="btn btn-primary">See Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
+                data-bs-toggle="modal" data-tags="java j2ee web" data-bs-target="#ucsy_elib">
+                <div class=" d-flex flex-column justify-content-around align-items-center">
+                    <img class=" img-thumbnail shadow-sm" src="./images/projects/UCSY_ELibrary.png" alt="">
+                    <p class="mt-2">UCSY E-Library using J2EE
+                    </p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ucsy_elib" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">UCSY E-Library using J2EE</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/projects/UCSY_ELibrary.png" class="w-100" alt="">
+                            <div class="my-2">
+                                UCSY E-Library is the initial version of digital catalog management for UCSY Library. It
+                                currently has features for browsing and reading ebooks online. It also has librarian
+                                features for catalog management and admin operations.
+                            </div>
+
+                            <div class="my-1">
+                                <button class="btn btn-sm btn-outline-primary">#Java</button>
+                                <button class="btn btn-sm btn-outline-primary">#J2EE</button>
+                                <button class="btn btn-sm btn-outline-primary">#Web</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="https://github.com/YanNaingSoe469/ucsy_elibrary"><button type="button"
+                                    class="btn btn-primary">See Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
+                data-bs-toggle="modal" data-tags="modeling se" data-bs-target="#thoss">
+                <div class=" d-flex flex-column justify-content-around align-items-center">
+                    <img class=" img-thumbnail shadow-sm" src="./images/projects/THOSS.png" alt="">
+                    <p class="mt-2">Design Modeling for Treasure's Hub
+                    </p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="thoss" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Design Modeling for Treasure's Hub</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/projects/THOSS.png" class="w-100" alt="">
+                            <div class="my-2">
+                                This project reflects the true modeling power of UML in software engineering. Including
+                                both static and dynamic aspects of the system, it fully represents almost all possible
+                                perspectives of software modeling. Key models in this project are use case model, state
+                                diagram, and design class models.
+                            </div>
+
+                            <div class="my-1">
+                                <button class="btn btn-sm btn-outline-primary">#Modeling</button>
+                                <button class="btn btn-sm btn-outline-primary">#SE</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="https://github.com/YanNaingSoe469/treasure-s_hub_modeling"><button type="button"
+                                    class="btn btn-primary">See Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
+                data-bs-toggle="modal" data-tags="data_analysis python" data-bs-target="#fit_life">
+                <div class=" d-flex flex-column justify-content-around align-items-center">
+                    <img class=" img-thumbnail shadow-sm" src="./images/projects/FitLife.png" alt="">
+                    <p class="mt-2">FitLife Dataset Analysis
+                    </p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="fit_life" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">FitLife Dataset Analysis</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/projects/FitLife.png" class="w-100" alt="">
+                            <div class="my-2">
+                                FitLife Dataset Analysis project is one of my first data analytics projects done as part
+                                of the UCSY coursework. Starting from dataset selection and preparation, it went through
+                                all data analysis steps producing both descriptive knowledge and predictive models.
+                                Frequent pattern mining and predictive model training are also done as experiment beyond
+                                the curriculum limits.
+                            </div>
+
+                            <div class="my-1">
+                                <button class="btn btn-sm btn-outline-primary">#DataAnalysis</button>
+                                <button class="btn btn-sm btn-outline-primary">#Python</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a
+                                href="https://colab.research.google.com/drive/1vh1Juc892qbKhZH2u_gLofXBfl7qQH7R?usp=sharing"><button
+                                    type="button" class="btn btn-primary">See Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
+                data-bs-toggle="modal" data-tags="database mysql" data-bs-target="#mlip">
+                <div class=" d-flex flex-column justify-content-around align-items-center">
+                    <img class=" img-thumbnail shadow-sm" src="./images/projects/MLIP.png" alt="">
+                    <p class="mt-2">MLIP Database Project
+                    </p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="mlip" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">MLIP Database Project</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/projects/MLIP.png" class="w-100" alt="">
+                            <div class="my-2">
+                                MLIP means Ministry of Labor, Immigration and Population of Myanmar. This project tries
+                                to create a central repository for storing countrywide data of citizens in digital
+                                format. It includes precise ER modeling work further implemented with MySQL.
+                            </div>
+
+                            <div class="my-1">
+                                <button class="btn btn-sm btn-outline-primary">#Database</button>
+                                <button class="btn btn-sm btn-outline-primary">#MySQL</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="https://github.com/YanNaingSoe469/mlip_database_project"><button type="button"
+                                    class="btn btn-primary">See Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
+                data-bs-toggle="modal" data-tags="arduino" data-bs-target="#smart_staircase">
+                <div class=" d-flex flex-column justify-content-around align-items-center">
+                    <img class=" img-thumbnail shadow-sm" src="./images/projects/smart_staricase.png" alt="">
+                    <p class="mt-2">Smart Staircase using Arduino
+                    </p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="smart_staircase" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Smart Staircase using Arduino</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/projects/smart_staricase.png" class="w-100" alt="">
+                            <div class="my-2">
+                                Automated lightning system for the staircases that enhances safety, reduces energy
+                                consumption, and offers user-friendliness. By utilizing motion and light sensors, the
+                                project aims to enable staircases lights only when needed, improving safety by ensuring
+                                proper visibility while conserving energy.
+                            </div>
+
+                            <div class="my-1">
+                                <button class="btn btn-sm btn-outline-primary">#Arduino</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="https://github.com/YanNaingSoe469/smart_staircase_arduino"><button type="button"
+                                    class="btn btn-primary">See Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
+                data-bs-toggle="modal" data-tags="modeling se" data-bs-target="#fresh_fruits_store">
+                <div class=" d-flex flex-column justify-content-around align-items-center">
+                    <img class=" img-thumbnail shadow-sm" src="./images/projects/fresh_fruits_store.png" alt="">
+                    <p class="mt-2">Online Fresh Fuits Store Modeling
+                    </p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="fresh_fruits_store" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Online Fresh Fuits Store Modeling</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/projects/fresh_fruits_store.png" class="w-100" alt="">
+                            <div class="my-2">
+                                This project is demonstration of the first half of software engineering concepts taught
+                                in UCSY. It solves the business problems with effective and precise requirement
+                                engineering, and proceeds to model the requirements with relevant models. This is the
+                                basis for futher design modeling.
+                            </div>
+
+                            <div class="my-1">
+                                <button class="btn btn-sm btn-outline-primary">#Modeling</button>
+                                <button class="btn btn-sm btn-outline-primary">#SE</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="https://github.com/YanNaingSoe469/online_fresh_fruits_store_modeling"><button
+                                    type="button" class="btn btn-primary">See Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
+                data-bs-toggle="modal" data-tags="web front_end" data-bs-target="#the_crown">
+                <div class=" d-flex flex-column justify-content-around align-items-center">
+                    <img class=" img-thumbnail shadow-sm" src="./images/projects/the_crown.png" alt="">
+                    <p class="mt-2">Landing Page for the Crown Series
+                    </p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="the_crown" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Landing Page for the Crown Series</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/projects/the_crown.png" class="w-100" alt="">
+                            <div class="my-2">
+                                This project is my very first web project with only HTML, CSS, and JS. It is a movie
+                                review site for the English series named 'The Crown', featuring the casts, plots, and
+                                scenes.
+                            </div>
+
+                            <div class="my-1">
+                                <button class="btn btn-sm btn-outline-primary">#Web</button>
+                                <button class="btn btn-sm btn-outline-primary">#FrontEnd</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="https://github.com/YanNaingSoe469/the_crown_frontend_project"><button type="button"
+                                    class="btn btn-primary">See Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
+                data-bs-toggle="modal" data-tags="database mysql" data-bs-target="#ecommerce">
+                <div class=" d-flex flex-column justify-content-around align-items-center">
+                    <img class=" img-thumbnail shadow-sm" src="./images/projects/ecommerce.png" alt="">
+                    <p class="mt-2">Ecommerce System Database
+                    </p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ecommerce" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ecommerce System Database</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/projects/ecommerce.png" class="w-100" alt="">
+                            <div class="my-2">
+                                Being the second database project, this project reflects the advanced parts of database
+                                technology. It includes all the ER modeling, MySQL implementations, and also has
+                                procedures, triggers, functions, and indexing features.
+                            </div>
+
+                            <div class="my-1">
+                                <button class="btn btn-sm btn-outline-primary">#Database</button>
+                                <button class="btn btn-sm btn-outline-primary">#MySQL</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="https://github.com/YanNaingSoe469/ecommerce_database"><button type="button"
+                                    class="btn btn-primary">See Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start  -->
+    <section class="footer border-top my-2 pt-2" id="footer">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center">Copyright by Yan Naing Soe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer end  -->
+    <!-- bootstrap js -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        function loadPanel(evt, panelName) {
+            const tabContainer = evt.currentTarget.closest('.tab-container');
+
+            var i, tabcontent, tablinks;
+            tabcontent = tabContainer.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = tabContainer.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(panelName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("defaultOpen").click();
+            document.getElementById("defaultSkills").click();
+        })
+    </script>
+</body>
+
+</html>
