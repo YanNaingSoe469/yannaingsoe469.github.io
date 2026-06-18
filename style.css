@@ -90,6 +90,10 @@
 .tech-card:hover {
     transform: scale(1.09);
 }
+
+.skill a{
+    text-decoration: none;
+}
 /* responsive */
 
 @media (max-width: 991px) { /* tablet size */
