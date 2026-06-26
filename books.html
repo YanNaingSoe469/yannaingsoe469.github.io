@@ -45,15 +45,29 @@
     <div class="container">
         <h1 class="my-3 text-center">My Books</h1>
 
-        <div class="d-flex justify-content-center">
-            <select name="" id="filter" class="form-select my-3" style="width:20%;">
+        <div class="d-flex justify-content-center my-2 w-100">
+            <select name="" id="projectFilter" class="form-select my-3 w-50">
                 <option value="all">All</option>
+                <option value="cs">Computer Science</option>
+                <option value="math">Mathematics</option>
+                <option value="database">Database</option>
+                <option value="mysql">MySQL</option>
+                <option value="ds">Data Structures</option>
+                <option value="algo">Algorithms</option>
+                <option value="java">Java</option>
+                <option value="la">Linear Algebra</option>
+                <option value="de">Differential Equations</option>
+                <option value="na">Numerical Analysis</option>
+                <option value="prob">Probability</option>
+                <option value="stat">Statistics</option>
+                <option value="cal">Calculus</option>
+                <option value="disc">Discrete</option>
             </select>
         </div>
 
         <div class="card-pane gap-3 flex-wrap">
             <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
-                data-bs-toggle="modal" data-tags="Database MySQL CS" data-bs-target="#dbms">
+                data-bs-toggle="modal" data-tags="database mysql cs" data-bs-target="#dbms">
                 <div class=" d-flex flex-column justify-content-around align-items-center">
                     <img class=" img-thumbnail shadow-sm" src="./images/books/Database.png" alt="">
                 </div>
@@ -102,7 +116,7 @@
             </div>
 
             <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
-                data-bs-toggle="modal" data-tags="DataStructure Algorithms Java" data-bs-target="#dsa">
+                data-bs-toggle="modal" data-tags="cs ds algo java" data-bs-target="#dsa">
                 <div class=" d-flex flex-column justify-content-around align-items-center">
                     <img class=" img-thumbnail shadow-sm" src="./images/books/DSA.png" alt="">
                 </div>
@@ -150,7 +164,7 @@
             </div>
 
             <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
-                data-bs-toggle="modal" data-tags="Math LinearAlgebra" data-bs-target="#la">
+                data-bs-toggle="modal" data-tags="math la" data-bs-target="#la">
                 <div class=" d-flex flex-column justify-content-around align-items-center">
                     <img class=" img-thumbnail shadow-sm" src="./images/books/LA.png" alt="">
                 </div>
@@ -196,7 +210,7 @@
             </div>
 
             <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
-                data-bs-toggle="modal" data-tags="Math DifferentialEquations NumericalAnalysis" data-bs-target="#dena">
+                data-bs-toggle="modal" data-tags="math de na" data-bs-target="#dena">
                 <div class=" d-flex flex-column justify-content-around align-items-center">
                     <img class=" img-thumbnail shadow-sm" src="./images/books/DENA.png" alt="">
                 </div>
@@ -243,7 +257,7 @@
             </div>
 
             <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
-                data-bs-toggle="modal" data-tags="Math Probability Statistics" data-bs-target="#psc">
+                data-bs-toggle="modal" data-tags="math prob stat" data-bs-target="#psc">
                 <div class=" d-flex flex-column justify-content-around align-items-center">
                     <img class=" img-thumbnail shadow-sm" src="./images/books/PSC.png" alt="">
                 </div>
@@ -289,7 +303,7 @@
             </div>
 
             <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
-                data-bs-toggle="modal" data-tags="CS Algorithms" data-bs-target="#aa">
+                data-bs-toggle="modal" data-tags="cs algo" data-bs-target="#aa">
                 <div class=" d-flex flex-column justify-content-around align-items-center">
                     <img class=" img-thumbnail shadow-sm" src="./images/books/AA.png" alt="">
                 </div>
@@ -333,7 +347,7 @@
             </div>
 
             <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
-                data-bs-toggle="modal" data-tags="Math Calculus" data-bs-target="#cal1">
+                data-bs-toggle="modal" data-tags="math cal" data-bs-target="#cal1">
                 <div class=" d-flex flex-column justify-content-around align-items-center">
                     <img class=" img-thumbnail shadow-sm" src="./images/books/Calculus 1.png" alt="">
                 </div>
@@ -378,7 +392,7 @@
             </div>
 
             <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
-                data-bs-toggle="modal" data-tags="Math Calculus" data-bs-target="#cal2">
+                data-bs-toggle="modal" data-tags="math cal" data-bs-target="#cal2">
                 <div class=" d-flex flex-column justify-content-around align-items-center">
                     <img class=" img-thumbnail shadow-sm" src="./images/books/Calculus 2.png" alt="">
                 </div>
@@ -423,7 +437,7 @@
             </div>
 
             <button type="button" class="card bg-primary-subtle p-2 border w-25 shadow-0 text-center"
-                data-bs-toggle="modal" data-tags="Math DiscreteMath" data-bs-target="#discrete">
+                data-bs-toggle="modal" data-tags="math disc" data-bs-target="#discrete">
                 <div class=" d-flex flex-column justify-content-around align-items-center">
                     <img class=" img-thumbnail shadow-sm" src="./images/books/Discrete Math.png" alt="">
                 </div>
@@ -471,7 +485,7 @@
     </div>
 
     <!-- footer start  -->
-    <section class="footer border-top my-2 pt-2" id="footer">
+    <section class="footer border-top my-2 pt-2 sticky-bottom bg-white" id="footer">
         <div class="container-lg">
             <div class="row">
                 <div class="col-lg-12">
@@ -484,28 +498,30 @@
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
-        function loadPanel(evt, panelName) {
-            const tabContainer = evt.currentTarget.closest('.tab-container');
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterSelect = document.getElementById('projectFilter');
+            const cards = document.querySelectorAll('.card');
 
-            var i, tabcontent, tablinks;
-            tabcontent = tabContainer.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
+            filterSelect.addEventListener('change', function () {
+                const selectedTag = this.value;
 
-            tablinks = tabContainer.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
+                cards.forEach(card => {
+                    // Get the data-tags string, fallback to empty string if missing
+                    const cardTagsStr = card.getAttribute('data-tags') || '';
 
-            document.getElementById(panelName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
+                    // Split by space to get an array of tags: ['modeling', 'se']
+                    const cardTags = cardTagsStr.toLowerCase().split(' ');
 
-        document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("defaultOpen").click();
-            document.getElementById("defaultSkills").click();
-        })
+                    if (selectedTag === 'all' || cardTags.includes(selectedTag.toLowerCase())) {
+                        // Show the card by removing Bootstrap's display-none class
+                        card.classList.remove('d-none');
+                    } else {
+                        // Hide the card by adding Bootstrap's display-none class
+                        card.classList.add('d-none');
+                    }
+                });
+            });
+        });
     </script>
 </body>
 

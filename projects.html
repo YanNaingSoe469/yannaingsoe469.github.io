@@ -495,29 +495,6 @@
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
-        function loadPanel(evt, panelName) {
-            const tabContainer = evt.currentTarget.closest('.tab-container');
-
-            var i, tabcontent, tablinks;
-            tabcontent = tabContainer.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            tablinks = tabContainer.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            document.getElementById(panelName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("defaultOpen").click();
-            document.getElementById("defaultSkills").click();
-        })
-
         document.addEventListener('DOMContentLoaded', () => {
             const filterSelect = document.getElementById('projectFilter');
             const cards = document.querySelectorAll('.card');
